@@ -24,10 +24,13 @@ swoole.log
 /.php-cs-fixer.cache
 
 # Docker
+!.env.prod.example
+!.env.dev.example
 **/Dockerfile.*
-**/docker-compose.override.yml
 /.env
-.env.*
+.env
+env/.env.prod
+env/.env.dev
 .docker/
 docker-compose.yml.local
 *.pid
