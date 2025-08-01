@@ -1,0 +1,87 @@
+# PHP
+/vendor/
+/composer.lock
+composer.phar
+*.phpunit.result.cache
+
+# Swoole
+swoole.log
+
+# Логи и runtime-файлы
+*.log
+/logs/
+/runtime/
+/storage/logs/
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Кэш
+.cache/
+.cache/*
+.phpunit.cache
+.php_cs.cache
+/.php-cs-fixer.cache
+
+# Docker
+**/Dockerfile.*
+**/docker-compose.override.yml
+/.env
+.env.*
+.docker/
+docker-compose.yml.local
+*.pid
+
+# Базы данных и дампы
+*.sql
+*.sqlite
+*.sqlite3
+/database/*.sqlite
+
+# Node.js/Frontend (если появится Web UI)
+node_modules/
+npm-debug.log*
+yarn-error.log
+/.nuxt/
+/dist/
+/build/
+coverage/
+.env.local
+.env.development
+.env.production
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.iml
+
+# Тесты/отчёты
+/coverage/
+/reports/
+/tests/_output/
+/phpunit.xml.cache
+
+# MacOS/Linux системные файлы
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Makefile-артефакты
+*.dSYM/
+*.o
+*.out
+*.a
+*.so
+
+# Дополнительно — индивидуальные папки микросервисов
+/services/*/vendor/
+/services/*/node_modules/
+/services/*/logs/
+/services/*/runtime/
